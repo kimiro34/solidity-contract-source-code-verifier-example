@@ -8,7 +8,7 @@ Generated to expect [@cameel](https://ethereum.stackexchange.com/users/79215/cam
 *Actually there is no need to run this project as you can see all informations without running. Running the project is just to verify that this project works as expected.*
 
 - Just clone this repository.
-- `npm run start`
+- `npm install && npm run start`
 
 # What to see
 ## Single file contract
