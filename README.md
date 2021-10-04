@@ -2,7 +2,7 @@
 
 A repository for solidity contract source code verification for all solidity versions both single and multiple files including meta data.
 
-Generated to expect [@cameel](https://ethereum.stackexchange.com/users/79215/cameel) 's feedback
+Generated to expect [@cameel](https://ethereum.stackexchange.com/users/79215/cameel) or any other expert's feedback
 
 # How to run 
 *Actually there is no need to run this project as you can see all informations without running. Running the project is just to verify that this project works as expected.*
