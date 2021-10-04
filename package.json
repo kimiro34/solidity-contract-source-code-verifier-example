@@ -4,6 +4,7 @@
   "description": "A repository for solidity contract source code verification for all solidity versions both single and multiple files including meta data.",
   "main": "verifier.js",
   "scripts": {
+    "start": "node verifier-single.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
