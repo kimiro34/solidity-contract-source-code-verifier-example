@@ -1,0 +1,27 @@
+{
+  "name": "solidity-contract-source-code-verifier-example",
+  "version": "1.0.0",
+  "description": "A repository for solidity contract source code verification for all solidity versions both single and multiple files including meta data.",
+  "main": "verifier.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimiro34/solidity-contract-source-code-verifier-example.git"
+  },
+  "keywords": [
+    "solidity",
+    "source-code",
+    "verify"
+  ],
+  "author": "kimiro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kimiro34/solidity-contract-source-code-verifier-example/issues"
+  },
+  "homepage": "https://github.com/kimiro34/solidity-contract-source-code-verifier-example#readme",
+  "dependencies": {
+    "solc": "^0.8.9"
+  }
+}
