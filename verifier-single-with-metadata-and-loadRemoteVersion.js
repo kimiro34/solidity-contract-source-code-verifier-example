@@ -59,31 +59,3 @@ solc.loadRemoteVersion(solc_version, async function (err, solc_specific) {
     );
   }
 });
-
-function processBytecode(bytecode) {
-  // Semantic versioning
-  let solc_minor = parseInt(
-    solc_version
-      .match(/v\d+?\.\d+?\.\d+?[+-]/gi)[0]
-      .match(/\.\d+/g)[0]
-      .slice(1)
-  );
-  let solc_patch = parseInt(
-    solc_version
-      .match(/v\d+?\.\d+?\.\d+?[+-]/gi)[0]
-      .match(/\.\d+/g)[1]
-      .slice(1)
-  );
-
-  if (solc_minor >= 4 && solc_patch >= 22) {
-    var starting_point = bytecode.lastIndexOf("6080604052");
-    var ending_point = bytecode.search("a165627a7a72305820");
-    return bytecode.slice(starting_point, ending_point);
-  } else if (solc_minor >= 4 && solc_patch >= 7) {
-    var starting_point = bytecode.lastIndexOf("6060604052");
-    var ending_point = bytecode.search("a165627a7a72305820");
-    return bytecode.slice(starting_point, ending_point);
-  } else {
-    return bytecode;
-  }
-}
